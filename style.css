@@ -830,6 +830,45 @@ body {
 
 @media (max-width: 800px) {
 
+.hero {
+  min-height: 100svh;
+  padding: 100px 24px 60px;
+}
+
+.hero h1 {
+  font-size: clamp(58px, 18vw, 82px);
+  line-height: 0.88;
+  letter-spacing: -2px;
+}
+
+.hero h1 em {
+  margin-left: 0;
+}
+
+.hero .subtitle {
+  max-width: 320px;
+  margin-top: 30px;
+
+  font-size: 10px;
+  line-height: 1.6;
+  letter-spacing: 2px;
+}
+
+.hero .date {
+  margin-bottom: 20px;
+  font-size: 10px;
+  letter-spacing: 3px;
+}
+
+.scroll-down {
+  bottom: 25px;
+  font-size: 8px;
+}
+
+.scroll-down span {
+  height: 25px;
+}
+
   header {
     flex-direction: column;
     gap: 20px;
