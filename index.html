@@ -49,46 +49,109 @@
 
 
     <!-- EINLADUNG -->
-    <section id="insieme" class="invitation">
+ <section id="insieme" class="invitation">
 
-      <h2>
-        Insieme è più bello
-      </h2>
+  <div class="invitation-content">
 
-      <p>Liebe Freunde,</p>
+    <p class="section-label">Insieme è più bello</p>
 
-      <p>
-        ich werde 40 und ich möchte mit Euch dort feiern,
-        wo das Leben etwas langsamer, der Wein etwas besser
-        und die Sonnenuntergänge etwas schöner sind.
-      </p>
+    <p class="invitation-greeting">
+      Liebe Freunde,
+    </p>
 
-      <p>
-        Mit Euch möchte ich in mein neues Jahrzehnt starten,
-        mit einem Wochenende voller Genuss, Lachen und Dolce Vita
-        getreu dem Motto Insieme è più bello.
-      </p>
+    <p>
+      ich werde 40 und ich möchte mit Euch dort feiern, wo das Leben
+      etwas langsamer, der Wein etwas besser und die Sonnenuntergänge
+      etwas schöner sind.
+    </p>
 
-    </section>
+    <p>
+      Mit Euch möchte ich in mein neues Jahrzehnt starten, mit einem
+      Wochenende voller Genuss, Lachen und Dolce Vita getreu dem
+      Motto Insieme è più bello.
+    </p>
 
-    <section id="location" class="location-section">
-
-  <div class="section-heading">
-    <p class="eyebrow">Die Location</p>
-    <h2>Agricampeggio La Piaggia</h2>
   </div>
 
-  <div class="gallery">
-    <img src="images/location-1.jpg" alt="La Piaggia">
-    <img src="images/location-2.jpg" alt="Toskana Landschaft">
-    <img src="images/location-3.jpg" alt="Sonnenuntergang in der Toskana">
-    <img src="images/location-4.jpg" alt="Stellplatz">
-    <img src="images/location-5.jpg" alt="Dinner Location">
+</section>
+
+    <<section id="location" class="location-section">
+
+  <div class="location-header">
+    <p class="section-label">Die Location</p>
+
+    <h2>
+      Agricampeggio La Piaggia
+    </h2>
   </div>
 
-  <div class="location-content">
 
-    <div class="location-text">
+  <div class="location-layout">
+
+    <!-- SLIDER -->
+    <div class="location-slider">
+
+      <div class="slides">
+
+        <img
+          class="slide active"
+          src="images/location-1.jpg"
+          alt="Agricampeggio La Piaggia"
+        >
+
+        <img
+          class="slide"
+          src="images/location-2.jpg"
+          alt="Agricampeggio La Piaggia"
+        >
+
+        <img
+          class="slide"
+          src="images/location-3.jpg"
+          alt="Agricampeggio La Piaggia"
+        >
+
+        <img
+          class="slide"
+          src="images/location-4.jpg"
+          alt="Agricampeggio La Piaggia"
+        >
+
+        <img
+          class="slide"
+          src="images/location-5.jpg"
+          alt="Agricampeggio La Piaggia"
+        >
+
+      </div>
+
+
+      <button
+        class="slider-button prev"
+        aria-label="Vorheriges Bild"
+      >
+        ←
+      </button>
+
+      <button
+        class="slider-button next"
+        aria-label="Nächstes Bild"
+      >
+        →
+      </button>
+
+
+      <div class="slide-counter">
+        <span id="current-slide">01</span>
+        <span>/ 05</span>
+      </div>
+
+    </div>
+
+
+    <!-- TEXT -->
+    <div class="location-copy">
+
       <p>
         Kommt mit mir in unser Paradies jenseits der Weinberge und
         Weizenfelder, an die Küste hin zum Horizont.
@@ -111,30 +174,33 @@
       </p>
 
       <p>
-        Reserviert ist bis Ende Januar. Gebt bei eurer Buchung an,
-        dass ihr zum Geburtstag gehört.
-      </p>
-    </div>
-
-    <div class="location-card">
-      <p class="eyebrow">Adresse</p>
-
-      <h3>La Piaggia</h3>
-
-      <p>
-        Località Fabbriciane<br>
-        57025 Piombino LI<br>
-        Italien
+        Reserviert ist bis Ende Januar.
+        Gebt bei eurer Buchung an, dass ihr zum Geburtstag gehört.
       </p>
 
-      <a
-        href="https://agricampeggiolapiaggia.it/"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="button"
-      >
-        Website ansehen
-      </a>
+
+      <div class="location-address">
+
+        <p class="location-name">
+          La Piaggia
+        </p>
+
+        <p>
+          Località Fabbriciane<br>
+          57025 Piombino LI<br>
+          Italien
+        </p>
+
+        <a
+          href="https://agricampeggiolapiaggia.it/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Website besuchen →
+        </a>
+
+      </div>
+
     </div>
 
   </div>
@@ -144,69 +210,99 @@
 <!-- PROGRAMM -->
 <section id="programm" class="program-section">
 
-  <div class="program-intro">
-    <p class="eyebrow">Was Euch erwartet</p>
+  <div class="program-header">
+
+    <p class="section-label">Was Euch erwartet</p>
 
     <h2>Il dolce far niente.</h2>
 
-    <p>
+    <p class="program-intro">
       Unser Fokus wird auf Il dolce far niente liegen, sodass nur ein
       kleines Programm auf dem Plan steht, bei dem es euch völlig
       freisteht teilzunehmen oder nicht.
     </p>
+
   </div>
 
-  <div class="timeline">
 
-    <article class="day">
-      <div class="day-date">
-        <span>20</span>
-        <p>05 · 2027</p>
+  <div class="program-grid">
+
+    <!-- DONNERSTAG -->
+    <article class="program-card">
+
+      <div class="program-date">
+        <span class="day-number">20</span>
+
+        <div>
+          <p class="weekday">Donnerstag</p>
+          <p class="month-year">Mai 2027</p>
+        </div>
       </div>
 
-      <div class="day-content">
-        <h3>Ankommen</h3>
+      <div class="program-content">
         <p>Ankunft und Check-in</p>
         <p>Gemütliches Beisammensein am Abend mit Vino</p>
       </div>
+
     </article>
 
-    <article class="day">
-      <div class="day-date">
-        <span>21</span>
-        <p>05 · 2027</p>
+
+    <!-- FREITAG -->
+    <article class="program-card">
+
+      <div class="program-date">
+        <span class="day-number">21</span>
+
+        <div>
+          <p class="weekday">Freitag</p>
+          <p class="month-year">Mai 2027</p>
+        </div>
       </div>
 
-      <div class="day-content">
-        <h3>Geburtstag</h3>
+      <div class="program-content">
         <p>Geburtstagsfrühstück</p>
         <p>Dinner der Dispensa Agricola</p>
       </div>
+
     </article>
 
-    <article class="day">
-      <div class="day-date">
-        <span>22</span>
-        <p>05 · 2027</p>
+
+    <!-- SAMSTAG -->
+    <article class="program-card">
+
+      <div class="program-date">
+        <span class="day-number">22</span>
+
+        <div>
+          <p class="weekday">Samstag</p>
+          <p class="month-year">Mai 2027</p>
+        </div>
       </div>
 
-      <div class="day-content">
-        <h3>Beachday</h3>
+      <div class="program-content">
         <p>Beachday mit verschiedenen Spielmöglichkeiten</p>
       </div>
+
     </article>
 
-    <article class="day">
-      <div class="day-date">
-        <span>23</span>
-        <p>05 · 2027</p>
+
+    <!-- SONNTAG -->
+    <article class="program-card">
+
+      <div class="program-date">
+        <span class="day-number">23</span>
+
+        <div>
+          <p class="weekday">Sonntag</p>
+          <p class="month-year">Mai 2027</p>
+        </div>
       </div>
 
-      <div class="day-content">
-        <h3>Arrivederci</h3>
+      <div class="program-content">
         <p>Frühstück in der Dispensa Agricola</p>
         <p>Abreise</p>
       </div>
+
     </article>
 
   </div>
@@ -216,82 +312,83 @@
 <!-- TUSCANY -->
 <section id="tuscany" class="tuscany-section">
 
-  <div class="tuscany-heading">
-    <p class="eyebrow">Noch ein bisschen länger bleiben?</p>
-    <h2>What to do<br>in Tuscany</h2>
+  <div class="tuscany-header">
 
-    <p>
+    <p class="section-label">What to do in Tuscany</p>
+
+    <p class="tuscany-intro">
       Falls ihr Euren Urlaub noch etwas mehr auskosten wollt,
       hier ein paar Vorschläge für Ausflüge in der Region.
     </p>
+
   </div>
 
-  <div class="tuscany-grid">
 
-    <article class="tuscany-card">
-      <div class="card-image">
-        <img src="images/mtb.jpg" alt="Mountainbiken in der Toskana">
-      </div>
-      <span>01</span>
+  <div class="tuscany-list">
+
+    <article class="tuscany-item">
+      <span class="tuscany-number">01</span>
+
       <h3>MTB</h3>
+
       <p>
         MTB-Paradies mit Strecken an der Küste oder im
         angrenzenden Naturschutzgebiet.
       </p>
     </article>
 
-    <article class="tuscany-card">
-      <div class="card-image">
-        <img src="images/populonia.jpg" alt="Populonia">
-      </div>
-      <span>02</span>
-      <h3>Populonia</h3>
+
+    <article class="tuscany-item">
+      <span class="tuscany-number">02</span>
+
+      <h3>Baratti & Populonia</h3>
+
       <p>
         Parco Archeologico di Baratti e Populonia.
       </p>
     </article>
 
-    <article class="tuscany-card">
-      <div class="card-image">
-        <img src="images/elba.jpg" alt="Insel Elba">
-      </div>
-      <span>03</span>
+
+    <article class="tuscany-item">
+      <span class="tuscany-number">03</span>
+
       <h3>Elba</h3>
+
       <p>
-        Ein Tagestrip auf die Insel Elba.
+        Tagestrip nach Elba.
       </p>
     </article>
 
-    <article class="tuscany-card">
-      <div class="card-image">
-        <img src="images/saturnia.jpg" alt="Saturnia">
-      </div>
-      <span>04</span>
+
+    <article class="tuscany-item">
+      <span class="tuscany-number">04</span>
+
       <h3>Saturnia</h3>
+
       <p>
-        Cascate del Mulino – die berühmten Thermalquellen.
+        Cascate del Mulino.
       </p>
     </article>
 
-    <article class="tuscany-card">
-      <div class="card-image">
-        <img src="images/talamone.jpg" alt="Talamone">
-      </div>
-      <span>05</span>
+
+    <article class="tuscany-item">
+      <span class="tuscany-number">05</span>
+
       <h3>Talamone</h3>
+
       <p>
-        Ein Ausflug an die wunderschöne Küste der Toskana.
+        Ein Ausflug an die Küste.
       </p>
     </article>
 
-    <article class="tuscany-card">
-      <div class="card-image">
-        <img src="images/volterra.jpg" alt="Volterra">
-      </div>
-      <span>06</span>
+
+    <article class="tuscany-item">
+      <span class="tuscany-number">06</span>
+
       <h3>Volterra</h3>
+
       <p>
-        Volterra und die Abbazia San Galgano.
+        Volterra – Abbazia San Galgano.
       </p>
     </article>
 
