@@ -1,0 +1,570 @@
+/* ------------------------------
+   GRUNDEINSTELLUNGEN
+------------------------------ */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #f4eadc;
+  color: #3d3028;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7;
+}
+
+
+/* ------------------------------
+   HEADER
+------------------------------ */
+
+header {
+  width: 100%;
+  padding: 24px 6%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #b9582c;
+  color: white;
+}
+
+.logo {
+  font-family: Georgia, serif;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+nav {
+  display: flex;
+  gap: 28px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+}
+
+
+/* ------------------------------
+   HERO
+------------------------------ */
+
+.hero {
+  min-height: 75vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  padding: 80px 20px;
+
+  background-color: #b9582c;
+  color: white;
+}
+
+.date {
+  margin: 0 0 15px;
+  font-size: 14px;
+  letter-spacing: 4px;
+}
+
+.hero h1 {
+  margin: 0;
+
+  font-family: Georgia, serif;
+  font-size: clamp(55px, 9vw, 110px);
+  font-weight: normal;
+  line-height: 1;
+}
+
+.subtitle {
+  max-width: 650px;
+  margin-top: 30px;
+
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 3px;
+}
+
+
+/* ------------------------------
+   EINLADUNG
+------------------------------ */
+
+.invitation {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 120px 30px;
+}
+
+.invitation h2 {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  font-family: Georgia, serif;
+  font-size: clamp(40px, 6vw, 70px);
+  font-weight: normal;
+  line-height: 1.1;
+}
+
+.invitation p {
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+/* ------------------------------
+   LOCATION
+------------------------------ */
+
+.location-section {
+  padding: 120px 6%;
+  background-color: #fffaf3;
+}
+
+.section-heading {
+  max-width: 1100px;
+  margin: 0 auto 60px;
+}
+
+.eyebrow {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+.section-heading h2 {
+  margin: 0;
+  max-width: 800px;
+
+  font-family: Georgia, serif;
+  font-size: clamp(45px, 7vw, 85px);
+  font-weight: normal;
+  line-height: 1;
+}
+
+.gallery {
+  max-width: 1200px;
+  margin: 0 auto 70px;
+
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 16px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery img:first-child {
+  height: 460px;
+}
+
+.location-content {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1.5fr 0.8fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.location-text p {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 18px;
+}
+
+.location-card {
+  padding: 35px;
+  border: 1px solid #cdbda9;
+}
+
+.location-card h3 {
+  margin: 5px 0 15px;
+
+  font-family: Georgia, serif;
+  font-size: 32px;
+  font-weight: normal;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 13px 20px;
+
+  background-color: #3d3028;
+  color: white;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 11px;
+}
+
+/* ------------------------------
+   PROGRAMM
+------------------------------ */
+
+.program-section {
+  padding: 120px 6%;
+  background-color: #3d3028;
+  color: #fffaf3;
+}
+
+.program-intro {
+  max-width: 750px;
+  margin: 0 auto 90px;
+  text-align: center;
+}
+
+.program-intro h2 {
+  margin: 10px 0 30px;
+
+  font-family: Georgia, serif;
+  font-size: clamp(50px, 7vw, 90px);
+  font-weight: normal;
+  line-height: 1;
+}
+
+.program-intro > p:last-child {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 17px;
+}
+
+.timeline {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.day {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 50px;
+
+  padding: 45px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.day:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.day-date span {
+  display: block;
+
+  font-family: Georgia, serif;
+  font-size: 70px;
+  line-height: 0.9;
+}
+
+.day-date p {
+  margin: 10px 0 0;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+.day-content h3 {
+  margin: 0 0 18px;
+
+  font-family: Georgia, serif;
+  font-size: 32px;
+  font-weight: normal;
+}
+
+.day-content p {
+  margin: 6px 0;
+  font-size: 17px;
+}
+/* ------------------------------
+   TUSCANY
+------------------------------ */
+
+.tuscany-section {
+  padding: 120px 6%;
+  background-color: #f4eadc;
+}
+
+.tuscany-heading {
+  max-width: 1100px;
+  margin: 0 auto 80px;
+}
+
+.tuscany-heading h2 {
+  margin: 10px 0 30px;
+
+  font-family: Georgia, serif;
+  font-size: clamp(55px, 9vw, 120px);
+  font-weight: normal;
+  line-height: 0.85;
+}
+
+.tuscany-heading > p:last-child {
+  max-width: 550px;
+  font-size: 17px;
+}
+
+.tuscany-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 70px 30px;
+}
+
+.card-image {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 22px;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  transition: transform 0.5s ease;
+}
+
+.tuscany-card:hover img {
+  transform: scale(1.03);
+}
+
+.tuscany-card > span {
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.tuscany-card h3 {
+  margin: 8px 0 12px;
+
+  font-family: Georgia, serif;
+  font-size: 38px;
+  font-weight: normal;
+}
+
+.tuscany-card p {
+  max-width: 450px;
+  margin: 0;
+}
+/* ------------------------------
+   FAQ
+------------------------------ */
+
+.faq-section {
+  padding: 120px 6%;
+  background-color: #fffaf3;
+}
+
+.faq-heading,
+.faq-list {
+  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.faq-heading {
+  margin-bottom: 60px;
+}
+
+.faq-heading h2 {
+  margin: 0;
+
+  font-family: Georgia, serif;
+  font-size: clamp(60px, 10vw, 120px);
+  font-weight: normal;
+  line-height: 1;
+}
+
+.faq-item {
+  border-top: 1px solid #cdbda9;
+}
+
+.faq-item:last-child {
+  border-bottom: 1px solid #cdbda9;
+}
+
+.faq-item summary {
+  padding: 30px 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+
+  cursor: pointer;
+  list-style: none;
+
+  font-family: Georgia, serif;
+  font-size: 24px;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary span {
+  font-family: Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 200;
+}
+
+.faq-answer {
+  max-width: 700px;
+  padding: 0 0 30px;
+}
+
+.faq-answer p {
+  margin: 0;
+  font-size: 17px;
+}
+
+
+/* ------------------------------
+   FOOTER
+------------------------------ */
+
+footer {
+  min-height: 60vh;
+  padding: 100px 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  background-color: #b9582c;
+  color: white;
+}
+
+.footer-date {
+  margin: 0 0 20px;
+
+  font-size: 12px;
+  letter-spacing: 4px;
+}
+
+footer h2 {
+  margin: 0;
+
+  font-family: Georgia, serif;
+  font-size: clamp(55px, 9vw, 110px);
+  font-weight: normal;
+  line-height: 1;
+}
+
+.footer-message {
+  margin-top: 30px;
+
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 22px;
+}
+
+/* ------------------------------
+   SMARTPHONE
+------------------------------ */
+
+@media (max-width: 800px) {
+
+  header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .hero {
+    min-height: 65vh;
+  }
+
+  .invitation {
+    padding: 80px 24px;
+  }
+
+  .invitation p {
+    font-size: 16px;
+  }
+
+  .gallery {
+  grid-template-columns: 1fr;
+}
+
+.gallery img,
+.gallery img:first-child {
+  height: 280px;
+}
+
+.location-content {
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+.location-section {
+  padding: 80px 24px;
+}
+.day {
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+
+.day-date span {
+  font-size: 55px;
+}
+
+.program-section {
+  padding: 80px 24px;
+}
+
+.program-intro {
+  text-align: left;
+  margin-bottom: 50px;
+}
+.tuscany-section {
+  padding: 80px 24px;
+}
+
+.tuscany-grid {
+  grid-template-columns: 1fr;
+  gap: 50px;
+}
+
+.card-image {
+  height: 320px;
+}
+
+.tuscany-heading {
+  margin-bottom: 50px;
+}
+.faq-section {
+  padding: 80px 24px;
+}
+
+.faq-item summary {
+  font-size: 20px;
+}
+
+}
