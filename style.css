@@ -59,8 +59,16 @@ nav a {
    HERO
 ------------------------------ */
 
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(30, 20, 14, 0.32);
+}
+
 .hero {
-  min-height: 75vh;
+  position: relative;
+  min-height: 92vh;
 
   display: flex;
   flex-direction: column;
@@ -68,10 +76,14 @@ nav a {
   align-items: center;
 
   text-align: center;
-  padding: 80px 20px;
+  padding: 100px 20px;
 
-  background-color: #b9582c;
+  background: url("images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+
   color: white;
+
 }
 
 .date {
