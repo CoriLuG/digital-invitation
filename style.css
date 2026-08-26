@@ -830,14 +830,39 @@ body {
 
 @media (max-width: 800px) {
 
+/* ------------------------------
+   MOBILE HERO
+------------------------------ */
 .hero {
   min-height: 100svh;
-  padding: 100px 24px 60px;
+  height: 100svh;
+
+  padding: 90px 24px 45px;
+
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  background-position: center;
+}
+
+.hero-content {
+  width: 100%;
+
+  transform: translateY(180px);
+}
+
+.hero .date {
+  margin-bottom: 15px;
+
+  font-size: 12px;
+  letter-spacing: 3px;
 }
 
 .hero h1 {
-  font-size: clamp(58px, 18vw, 82px);
-  line-height: 0.88;
+  font-size: clamp(52px, 15vw, 70px);
+  line-height: 0.85;
   letter-spacing: -2px;
 }
 
@@ -846,22 +871,19 @@ body {
 }
 
 .hero .subtitle {
-  max-width: 320px;
-  margin-top: 30px;
+  max-width: 310px;
+  margin: 28px auto 0;
 
-  font-size: 10px;
+  font-size: 11px;
   line-height: 1.6;
-  letter-spacing: 2px;
-}
-
-.hero .date {
-  margin-bottom: 20px;
-  font-size: 10px;
-  letter-spacing: 3px;
+  letter-spacing: 1.5px;
 }
 
 .scroll-down {
-  bottom: 25px;
+  right: 24px;
+  bottom: 28px;
+  left: auto;
+
   font-size: 8px;
 }
 
@@ -934,15 +956,9 @@ body {
   transform: rotate(-45deg);
 }
 
-  .hero {
-    min-height: 65vh;
-  }
-
-
-
-  .invitation {
-    padding: 90px 24px;
-  }
+ .invitation {
+  padding: 85px 24px 90px;
+}
 
   .invitation-content p {
     font-size: 17px;
