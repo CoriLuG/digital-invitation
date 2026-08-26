@@ -2,6 +2,20 @@
    GRUNDEINSTELLUNGEN
 ------------------------------ */
 
+:root {
+  /* SCHRIFTEN */
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "DM Sans", Arial, sans-serif;
+
+  /* SCHRIFTGRÖSSEN */
+  --text-small: 11px;
+  --text-body: 17px;
+  --text-large: 19px;
+
+  --heading-small: 28px;
+  --heading-section: clamp(40px, 5vw, 64px);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -12,9 +26,12 @@ html {
 
 body {
   margin: 0;
+
   background-color: #f4eadc;
   color: #3d3028;
-  font-family: Arial, Helvetica, sans-serif;
+
+  font-family: var(--font-sans);
+  font-size: var(--text-body);
   line-height: 1.7;
 }
 
@@ -189,10 +206,6 @@ body {
 
 
 /* ------------------------------
-   EINLADUNG
------------------------------- */
-
-/* ------------------------------
    INVITATION
 ------------------------------ */
 
@@ -206,19 +219,33 @@ body {
   margin: 0 auto;
 }
 
-.section-label {
-  margin: 0 0 45px;
+.section-title {
+  margin: 0;
 
-  font-size: 11px;
+  font-family: var(--font-serif);
+  font-size: var(--heading-section);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.section-label {
+  margin: 0 0 22px;
+
+  font-family: var(--font-sans);
+  font-size: var(--text-small);
   font-weight: 500;
+
   letter-spacing: 3px;
   text-transform: uppercase;
 }
 
 .invitation-greeting {
-  font-family: "Playfair Display", serif;
-  font-size: 32px !important;
-  line-height: 1.3 !important;
+  margin-top: 36px !important;
+
+  font-family: var(--font-serif);
+  font-size: 24px !important;
+  font-weight: 400;
+  line-height: 1.4 !important;
 }
 
 .invitation-content p {
@@ -229,9 +256,6 @@ body {
   line-height: 1.9;
 }
 
-/* ------------------------------
-   LOCATION
------------------------------- */
 /* ------------------------------
    LOCATION
 ------------------------------ */
@@ -965,8 +989,8 @@ body {
   }
 
   .invitation-greeting {
-    font-size: 27px !important;
-  }
+  font-size: 22px !important;
+}
 
 .location-section {
   padding: 90px 24px;
@@ -982,11 +1006,16 @@ body {
 }
 
 .location-slider {
-  height: 450px;
+  height: 380px;
 }
 
 .location-copy {
   padding-top: 0;
+}
+
+.slider-button {
+  width: 40px;
+  height: 40px;
 }
 
   .program-section {
